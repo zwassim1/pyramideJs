@@ -6,5 +6,5 @@ Le site dessine une pyramide à n étage dans la console :)
 
 PS : Le script n'accépte pas un nombre d'étages supérieur à 25 ;)
 
-Lien de la version prod : 
+Lien de la version prod : https://aminelejmi.github.io/pyramideJs/
 
