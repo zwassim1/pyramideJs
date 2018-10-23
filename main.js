@@ -1,4 +1,5 @@
 alert('Salut, bienvenue dans ma super pyramide !');
+
 console.log('Salut, bienvenue dans ma super pyramide !');
 
 do {
@@ -10,13 +11,10 @@ do {
 
 console.log('Voici la pyramide :');
 
+let result = '';
 for (let i = 1; i <= nombreEtages; i++) {
     let etage = '';
-    for (let j = nombreEtages - i; j >= 1; j--) {
-        etage += ' ';
-    }
-    for (let j = 1; j <= 2 * i - 1; j++) {
-        etage += '#';
-    }
-    console.log(etage);
+    etage += (' ').repeat(nombreEtages - i) + '#'.repeat(2 * i - 1);
+    result += etage + '\n';
 }
+console.log(result);
