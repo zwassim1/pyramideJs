@@ -3,11 +3,16 @@ alert('Salut, bienvenue dans ma super pyramide !');
 console.log('Salut, bienvenue dans ma super pyramide !');
 
 do {
-    var nombreEtages = Number(prompt("Combien d'étages veux-tu ?"));
+    var nombreEtages = prompt("Combien d'étages veux-tu ?");
     if (nombreEtages > 25) {
         alert("Le nombre d'étages doit être inférieur à 25 !");
+    } else if(nombreEtages <= 0){
+        alert('Une pyramide ne pêut pas avoir de sous-sol :p');
+    } else if(isNaN(nombreEtages)) {
+        alert('La valeur d\'entrée doit être numérique');
     }
-} while (nombreEtages > 25)
+} while (nombreEtages > 25 || nombreEtages <= 0 || isNaN(nombreEtages) )
+
 
 console.log('Voici la pyramide :');
 
@@ -18,3 +23,5 @@ for (let i = 1; i <= nombreEtages; i++) {
     result += etage + '\n';
 }
 console.log(result);
+
+
